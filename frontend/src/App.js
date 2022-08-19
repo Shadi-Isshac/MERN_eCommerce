@@ -1,17 +1,19 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Router} from 'react-router-dom';
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
 
 
 function App() {
   return (
     <Router>
     <main>
-      <Switch>
-        <Route exact path="/" />
-        <Route exact path="/product/:id" />
-        <Route exact path="/cart" />
-      </Switch>
+      <Routes>
+        <Route exact path="/" component={HomeScreen}/>
+        <Route exact path="/product/:id" component={ProductScreen}/>
+        <Route exact path="/cart" component={CartScreen}/>
+      </Routes>
     </main>
     </Router>
   );
