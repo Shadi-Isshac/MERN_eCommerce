@@ -1,11 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Router} from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+    <main>
+      <Switch>
+        <Route exact path="/" />
+        <Route exact path="/product/:id" />
+        <Route exact path="/cart" />
+      </Switch>
+    </main>
+    </Router>
   );
 }
 
