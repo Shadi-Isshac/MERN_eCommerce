@@ -5,7 +5,7 @@ const navbar = ({click}) => {
   return (
     <nav className ='navbar'>
       <div className="navbar__logo">
-          <Link to="/" className='shopmeow'>Shop Meow Store</Link>
+          <Link to="/" className='shopmeow'>Shop Meow</Link>
       </div>
      
      
