@@ -11,17 +11,17 @@ const navbar = () => {
      
       <ul className="navbar__links">
         <li>
-            <Link to="/cart">
+            <Link to="/cart" className="cart__link">
               <i className="fas fa-shopping-cart"></i> 
-              cart
+             <span className='cart'>
+               Cart 
+               </span>
             <span className="cartlogo__badge">0</span>
+            
             </Link>
         </li>
         <li>
-            <Link to="/">
-              Shop
-            <span className="cartlogo__badge"></span>
-            </Link>
+            <Link to="/">Shop</Link>
         </li>
       </ul>
 
