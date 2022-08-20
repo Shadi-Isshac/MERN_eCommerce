@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const Product = () => {
   return (
     <div className="product">
-        <img src="https://www.byrdie.com/thmb/fXYC-J31Zbwni_PG_V_bDucLuRU=/900x0/filters:no_upscale():max_bytes(150000):strip_icc()/SheaMoisture-5c82c94646e0fb00013364c8.jpg" alt=""/>
+        <img src="https://bjs.scene7.com/is/image/bjs/23459?$bjs-Zoom$" alt=""/>
 
         <div className="product__info">
             <p className="info__name">Product 1</p>
