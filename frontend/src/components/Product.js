@@ -14,7 +14,7 @@ const Product = () => {
 
             <p className="info__price">14.99</p>
 
-            <Link to={`/product/${1111}`} className='info__buton'>View</Link>
+            <Link to={`/product/${1111}`} className='info__button'>View</Link>
         </div>
     </div>
   )
