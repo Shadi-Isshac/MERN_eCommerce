@@ -29,12 +29,14 @@
     text-decoration: none;
     color: #f4f4f4;
     font-size:  1.2rem;
+    display: flex;
     align-items: center;
 }
 
-.cart {
-    padding-left: 1rem;
-    
+.navbar__links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
 }
 
 .cart__link {
@@ -49,13 +51,19 @@
     color: #f4f4f4;
 }
 
-.cartlogo__badge{
+.cartlogo__badge {
+    width: 30px;
+    height: 30px;
     background-color: #f4f4f4;
     color: #040404;
     border-radius: 50%;
     margin-left: 8px;
     color: #040404;
     font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex ;
 }
 
 .hamburger__menu {

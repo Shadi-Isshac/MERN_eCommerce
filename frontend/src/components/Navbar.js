@@ -13,11 +13,10 @@ const navbar = ({click}) => {
         <li>
             <Link to="/cart" className="cart__link">
               <i className="fas fa-shopping-cart"></i> 
-             <span className='cart'>
-               Cart 
-               </span>
+              <span>
+             Cart
             <span className="cartlogo__badge">0</span>
-            
+              </span>
             </Link>
         </li>
         <li>
