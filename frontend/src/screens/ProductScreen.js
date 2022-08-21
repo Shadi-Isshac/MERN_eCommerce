@@ -2,7 +2,9 @@ import './ProductScreen.css';
 
 const ProductScreen = () => {
   return (
-    <div className="productsScreen"> Product Screen</div>
+    <div className="productsScreen"> 
+    
+    </div>
   )
 }
 
