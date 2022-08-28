@@ -1,6 +1,14 @@
-import './ProductScreen.css';
+import "./ProductScreen.css";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getProductDetails } from "../redux/actions/productActions";
+
+
 
 const ProductScreen = () => {
+ 
+
+ 
   return (
     <div className="productscreen"> 
       <div className="productscreen__left">
@@ -8,13 +16,13 @@ const ProductScreen = () => {
           <img src="https://bjs.scene7.com/is/image/bjs/23459?$bjs-Zoom$" alt="Product name" />
         </div>
         <div className="left__info">
-          <p className="left__name">Product 1</p>
+          <p className="left__name">Cat Food</p>
           <p className="left__name">Price: </p>
           <p className="left__name">Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem laboriosam voluptate expedita explicabo illo molestias?</p>
         </div>
       </div>
       <div className="productscreen__right">
-        <div className="right__info">
+        <div className="right__info"></div>
           <p>
             Price: <span>$14.99</span>
           </p>
@@ -29,10 +37,9 @@ const ProductScreen = () => {
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
-            <button type='button'>Add To Cart</button>
+            <button type='button'>Add To</button>
           </p>
       </div>
-    </div>
     </div>
   )
 }

@@ -1,23 +1,24 @@
-import './Product.css'
-import {Link} from 'react-router-dom'
+import "./Product.css";
+import { Link } from "react-router-dom";
 
-const Product = () => {
+const Product = ({ imageUrl, description, price, name, productId }) => {
   return (
     <div className="product">
-        <img src="https://bjs.scene7.com/is/image/bjs/23459?$bjs-Zoom$" alt="cat food"/>
+      <img src={imageUrl} alt={name} />
 
-        <div className="product__info">
-            <p className="info__name">Product 1</p>
-                <p className="info__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione numquam recusandae quis repudiandae architecto!
-                </p>
+      <div className="product__info">
+        <p className="info__name">{name}</p>
 
-            <p className="info__price">14.99</p>
+        <p className="info__description">{description}</p>
 
-            <Link to={`/product/${1111}`} className='info__button'>View</Link>
-        </div>
+        <p className="info__price">${price}</p>
+
+        <Link to={`/product/${productId}`} className="info__button">
+          View
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
